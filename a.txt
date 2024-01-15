@@ -1,0 +1,1 @@
+http://localhost:8081/index.bundle?platform=ios\&dev=true\&lazy=true\&minify=false\&inlineSourceMap=false\&modulesOnly=false\&runModule=true\&app=org.reactjs.native.example.pdftest
