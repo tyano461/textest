@@ -1,21 +1,15 @@
 import React from 'react';
-import {
-  Button,
-  StatusBar,
-  TextInput,
-  View,
-} from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import {HomeScreen} from './HomeScreen'
-import {WebScreen} from './WebScreen'
+import { HomeScreen } from './HomeScreen'
+// import { WebProps, WebScreen } from './WebScreen'
 
 
 export type RootStackParams = {
   'Home': undefined
-  'Web': undefined
+  // 'Web': WebProps | undefined
 }
 
 const Stack = createNativeStackNavigator<RootStackParams>();
@@ -34,7 +28,7 @@ const NavigationContent: React.FC = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="Web" component={WebScreen} />
+      {/* <Stack.Screen name="Web" component={WebScreen} /> */}
     </Stack.Navigator>
   );
 };

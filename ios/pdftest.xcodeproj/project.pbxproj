@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* pdftestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* pdftestTests.m */; };
+		06AA0DB52B563D88000C79E0 /* luatex.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AA0DB42B563D88000C79E0 /* luatex.xcframework */; };
+		06AA0DB62B563D88000C79E0 /* luatex.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06AA0DB42B563D88000C79E0 /* luatex.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06AA0DB82B563DA6000C79E0 /* texlua53.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AA0DB72B563DA6000C79E0 /* texlua53.xcframework */; };
+		06AA0DB92B563DA6000C79E0 /* texlua53.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06AA0DB72B563DA6000C79E0 /* texlua53.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06AA0DBB2B563DBD000C79E0 /* pdftex.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AA0DBA2B563DBD000C79E0 /* pdftex.xcframework */; };
+		06AA0DBC2B563DBD000C79E0 /* pdftex.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06AA0DBA2B563DBD000C79E0 /* pdftex.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06B0AF112B566DDD00404C54 /* kpathsea.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AA0DBD2B563DD3000C79E0 /* kpathsea.xcframework */; };
+		06B0AF122B566DDD00404C54 /* kpathsea.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06AA0DBD2B563DD3000C79E0 /* kpathsea.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06B0AF132B566E5200404C54 /* ios_system.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C20CAB2B5641AD001A9359 /* ios_system.xcframework */; };
+		06B0AF142B566E5200404C54 /* ios_system.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06C20CAB2B5641AD001A9359 /* ios_system.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -26,10 +36,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		06AA0DB32B563D75000C79E0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				06B0AF142B566E5200404C54 /* ios_system.xcframework in Embed Frameworks */,
+				06B0AF122B566DDD00404C54 /* kpathsea.xcframework in Embed Frameworks */,
+				06AA0DBC2B563DBD000C79E0 /* pdftex.xcframework in Embed Frameworks */,
+				06AA0DB62B563D88000C79E0 /* luatex.xcframework in Embed Frameworks */,
+				06AA0DB92B563DA6000C79E0 /* texlua53.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* pdftestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pdftestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* pdftestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pdftestTests.m; sourceTree = "<group>"; };
+		0686C7B72B550401009A0D0B /* RCTPDFModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RCTPDFModule.m; path = pdftest/RCTPDFModule.m; sourceTree = "<group>"; };
+		0686C7B92B55042C009A0D0B /* RCTPDFModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RCTPDFModule.h; path = pdftest/RCTPDFModule.h; sourceTree = "<group>"; };
+		0686C7BA2B551E81009A0D0B /* PDFView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PDFView.m; path = pdftest/PDFView.m; sourceTree = "<group>"; };
+		0686C7BC2B551EB0009A0D0B /* PDFView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PDFView.h; path = pdftest/PDFView.h; sourceTree = "<group>"; };
+		06AA0DB02B563D74000C79E0 /* bibtex.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = bibtex.xcframework; path = Frameworks/bibtex.xcframework; sourceTree = "<group>"; };
+		06AA0DB42B563D88000C79E0 /* luatex.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = luatex.xcframework; path = Frameworks/luatex.xcframework; sourceTree = "<group>"; };
+		06AA0DB72B563DA6000C79E0 /* texlua53.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = texlua53.xcframework; path = Frameworks/texlua53.xcframework; sourceTree = "<group>"; };
+		06AA0DBA2B563DBD000C79E0 /* pdftex.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = pdftex.xcframework; path = Frameworks/pdftex.xcframework; sourceTree = "<group>"; };
+		06AA0DBD2B563DD3000C79E0 /* kpathsea.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = kpathsea.xcframework; path = Frameworks/kpathsea.xcframework; sourceTree = "<group>"; };
+		06C20CAB2B5641AD001A9359 /* ios_system.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ios_system.xcframework; path = Frameworks/ios_system.xcframework; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* pdftest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pdftest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = pdftest/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = pdftest/AppDelegate.mm; sourceTree = "<group>"; };
@@ -60,6 +98,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD4DA849252FDF3C795E6BF4 /* libPods-pdftest.a in Frameworks */,
+				06AA0DBB2B563DBD000C79E0 /* pdftex.xcframework in Frameworks */,
+				06B0AF132B566E5200404C54 /* ios_system.xcframework in Frameworks */,
+				06B0AF112B566DDD00404C54 /* kpathsea.xcframework in Frameworks */,
+				06AA0DB82B563DA6000C79E0 /* texlua53.xcframework in Frameworks */,
+				06AA0DB52B563D88000C79E0 /* luatex.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +135,10 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				0686C7B72B550401009A0D0B /* RCTPDFModule.m */,
+				0686C7B92B55042C009A0D0B /* RCTPDFModule.h */,
+				0686C7BA2B551E81009A0D0B /* PDFView.m */,
+				0686C7BC2B551EB0009A0D0B /* PDFView.h */,
 			);
 			name = pdftest;
 			sourceTree = "<group>";
@@ -99,6 +146,12 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				06C20CAB2B5641AD001A9359 /* ios_system.xcframework */,
+				06AA0DBD2B563DD3000C79E0 /* kpathsea.xcframework */,
+				06AA0DBA2B563DBD000C79E0 /* pdftex.xcframework */,
+				06AA0DB72B563DA6000C79E0 /* texlua53.xcframework */,
+				06AA0DB42B563D88000C79E0 /* luatex.xcframework */,
+				06AA0DB02B563D74000C79E0 /* bibtex.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				6775DFBFC77F32EB8AE12898 /* libPods-pdftest.a */,
 				45D6E7387AD0FA58D926766C /* libPods-pdftest-pdftestTests.a */,
@@ -183,6 +236,7 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				6F391A750713B84803B118C0 /* [CP] Embed Pods Frameworks */,
 				E118E5AB1875BB9894A1AAEE /* [CP] Copy Pods Resources */,
+				06AA0DB32B563D75000C79E0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -466,8 +520,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 599S4ZJU32;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = pdftest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,6 +536,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = pdftest;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -493,7 +550,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 599S4ZJU32;
 				INFOPLIST_FILE = pdftest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,6 +565,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = pdftest;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
